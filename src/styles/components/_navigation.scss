@@ -1,0 +1,18 @@
+.c-navigation {
+  a {
+    @apply inline-block m-0;
+
+    &:after {
+      @apply block border-b-2 border-orange-400;
+      content: '';
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
