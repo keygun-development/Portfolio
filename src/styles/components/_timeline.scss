@@ -1,0 +1,29 @@
+ul {
+  &.c-timeline {
+    li {
+      &:before {
+        content: "";
+        @apply bg-orange-400 p-3 absolute left-0 rounded-full;
+      }
+
+      &:not(:last-child) {
+        &:after {
+          content: "";
+          @apply absolute top-[155%] left-[11px] h-[50px] border border-gray-400;
+        }
+      }
+
+      &.c-timeline__gray {
+        &:before {
+          @apply bg-gray-400 animate-pulse;
+        }
+
+        &:not(:last-child) {
+          &:after {
+            @apply border-gray-300;
+          }
+        }
+      }
+    }
+  }
+}

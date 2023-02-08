@@ -1,5 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import Home from './views/Home.vue'
+import Projecten from './views/Projecten.vue'
+import Packages from './views/Packages.vue'
+import OverMij from './views/OverMij.vue'
 
 export default createRouter({
     history: createWebHistory(),
@@ -8,23 +11,19 @@ export default createRouter({
     routes: [
         {
             path: '/',
-            component: Home
+            component: Home,
         },
         {
             path: '/projecten',
-            component: Home,
+            component: Projecten,
         },
         {
             path: '/packages',
-            component: Home,
+            component: Packages,
         },
         {
             path: '/over-mij',
-            component: Home,
-        },
-        {
-            path: '/contact',
-            component: Home,
-        },
-    ],
+            component: OverMij,
+        }
+    ]
 })

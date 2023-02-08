@@ -1,0 +1,35 @@
+.c-project__grid {
+  @apply grid gap-20;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.grid-item {
+  @apply relative duration-300;
+
+  p {
+    @apply duration-300;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+
+    p {
+      @apply text-white;
+    }
+  }
+}
+
+.grid-item:nth-child(odd) {
+  @apply top-0;
+}
+
+.grid-item:nth-child(even) {
+  @apply top-1/4;
+}

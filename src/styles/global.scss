@@ -3,3 +3,24 @@
 * {
   font-family: 'Titillium Web', sans-serif;
 }
+
+.cursor {
+  animation: blink 1s cubic-bezier(0, 0, 0, 1) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.spin-6s {
+  @apply animate-spin;
+  animation-duration: 3s;
+}

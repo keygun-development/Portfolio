@@ -4,7 +4,11 @@ module.exports = {
       "./src/**/*.{vue,ts}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        inset: 'inset 0 0 13px 1px #000'
+      }
+    },
   },
   plugins: [],
 }
