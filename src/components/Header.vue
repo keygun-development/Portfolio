@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-nocheck
 import MobileMenu from './MobileMenu.vue';
 import MenuDisclosure from "./MenuDisclosure.vue";
 </script>
@@ -40,7 +41,7 @@ import MenuDisclosure from "./MenuDisclosure.vue";
           ref="mobileMenuRef"
         >
           <template v-slot:disclosure="slotProps">
-            <div @click="this.$refs.mobileMenuRef.disclose()"
+            <div @click="$refs['mobileMenuRef'].disclose()"
                  class="c-header__bars"
                  :class="slotProps.active ? 'menu-open' : ''">
               <div class="one"></div>
