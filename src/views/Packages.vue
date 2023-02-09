@@ -15,7 +15,7 @@ export default defineComponent({
   setup() {
     const packages = ref<Project[]>([
       {
-        img: '../src/images/Draggable.gif',
+        img: '/images/Draggable.gif',
         title: 'Draggable',
         description: 'Dit was een package die ik gebruikte voor het versimpelen van code. Hier zat een fout in dat wanneer je een nieuwe item toevoegde aan de items die je kon verslepen werd hij niet laten zien. Dit heb ik opgelost en heb hier mijn eigen clone van gemaakt.',
         url: 'https://github.com/keygun-development/vue3-draggable',

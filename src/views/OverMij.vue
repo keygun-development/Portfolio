@@ -69,7 +69,7 @@ export default defineComponent({
         </div>
         <div class="flex justify-end mt-4 md:mt-0">
           <img class="rounded-xl aspect-square object-cover shadow-lg hover:rotate-3 duration-300"
-               src="../images/pf-km.jpeg"/>
+               src="/images/pf-km.jpeg"/>
         </div>
       </div>
     </div>
