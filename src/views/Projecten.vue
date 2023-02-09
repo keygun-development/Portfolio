@@ -71,15 +71,15 @@ export default defineComponent({
     <div class="bg-gray-900 py-4">
       <div class="container mx-auto px-4">
         <div class="w-full flex justify-center text-white text-center">
-          <div class="flex justify-center items-end w-8/12">
-            <h1 v-html="typedText" class="text-5xl font-bold mt-8"></h1>
+          <div class="flex justify-center items-end md:w-8/12">
+            <h1 v-html="typedText" class="sm:text-5xl text-2xl font-bold mt-8"></h1>
             <span v-if="typing" class="cursor text-5xl font-bold">|</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="bg-gradient-to-b from-gray-900 to-black shadow-lg py-8"></div>
+  <div class="bg-gradient-to-b from-gray-900 to-black shadow-lg md:py-8 py-4"></div>
   <div class="bg-black py-4">
     <div class="container mx-auto px-4">
       <div class="c-project__grid">

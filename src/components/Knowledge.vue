@@ -1,6 +1,6 @@
 <template>
-  <div class="w-8/12 rounded-lg bg-gray-800 p-4">
-    <h2 class="text-orange-400 text-4xl font-semibold">
+  <div class="lg:w-8/12 rounded-lg bg-gray-800 p-4">
+    <h2 class="text-orange-400 sm:text-4xl text-2xl font-semibold">
       Mijn kennis
     </h2>
     <p class="text-white mt-4">

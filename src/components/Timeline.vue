@@ -42,7 +42,7 @@ export default defineComponent({
   <div class="flex justify-center mt-8">
     <ul class="c-timeline inline-block">
       <li v-for="timeline in timelines"
-          class="relative pl-4 mb-20 text-white font-bold"
+          class="relative pl-4 mb-20 text-white font-bold max-h-[25px]"
           :class="timeline.year >= currentYear ? 'c-timeline__gray' : ''">
         <span class="text-gray-400 text-sm mr-2 ml-8 font-normal">
           {{ timeline.year }}

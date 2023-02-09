@@ -16,3 +16,46 @@
     }
   }
 }
+
+.c-header__bars {
+  @apply absolute right-[10px] duration-100;
+
+  div {
+    @apply block duration-300 rotate-0 ml-0 bg-white w-8 h-1 rounded-lg;
+  }
+
+  &.menu-open {
+    .one {
+      transform: rotate(135deg);
+      margin-bottom: -1px;
+      margin-top: 9px
+    }
+
+    .two {
+      margin-left: -10px;
+      margin-top: -5px;
+      background-color: transparent;
+    }
+
+    .three {
+      transform: rotate(-135deg);
+      margin-top: -7px;
+    }
+  }
+}
+
+.c-mobile__menu {
+  @apply h-0 flex duration-300 overflow-hidden flex-col shadow-md bg-black;
+
+  &.active {
+    @apply overflow-y-scroll;
+  }
+
+  li {
+    @apply w-full;
+
+    a {
+      @apply flex p-4;
+    }
+  }
+}

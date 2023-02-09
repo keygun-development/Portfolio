@@ -16,7 +16,7 @@ export default defineComponent({
   <a v-if="project.url" target="_blank" :href="project.url" class="grid-item">
     <img class="aspect-video object-cover w-full rounded-t-xl" :src="project.img"/>
     <div class="p-8 bg-gray-800 rounded-b-xl">
-      <h3 class="text-2xl font-bold text-orange-400">
+      <h3 class="sm:text-2xl text-xl font-bold text-orange-400">
         {{ project.title }}
       </h3>
       <p class="mt-4 text-gray-400">
@@ -27,7 +27,7 @@ export default defineComponent({
   <div v-else class="grid-item">
     <img class="aspect-video object-cover w-full rounded-t-xl" :src="project.img"/>
     <div class="p-8 bg-gray-800 rounded-b-xl">
-      <h3 class="text-2xl font-bold text-orange-400">
+      <h3 class="sm:text-2xl text-xl font-bold text-orange-400">
         {{ project.title }}
       </h3>
       <p class="mt-4 text-gray-400">

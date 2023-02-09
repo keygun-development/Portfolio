@@ -5,9 +5,18 @@ import {
     faXmark
 } from '@fortawesome/free-solid-svg-icons';
 
+import {
+    faGithub,
+    faLinkedin,
+    faInstagramSquare
+} from '@fortawesome/free-brands-svg-icons'
+
 library.add(
     faChevronRight,
-    faXmark
+    faXmark,
+    faGithub,
+    faLinkedin,
+    faInstagramSquare
 );
 
 dom.watch();
