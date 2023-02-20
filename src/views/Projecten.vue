@@ -15,25 +15,25 @@ export default defineComponent({
   setup() {
     const projects = ref<Project[]>([
       {
-        img: `/images/Ben.jpg`,
+        img: `/images/Ben.webp`,
         title: 'Ben Berkenbosch',
         description: 'Ben had mij gevraagd een website te maken waar hij zijn eigen muziek op kon publiceren. Dit klonk als een leuk project! Hij moet albums aan kunnen maken, muziek toevoegen en teksten aanpassen. Ik heb een eigen dashboard achter de website gebouwd zodat hij dit zelf kon doen.',
         url: 'https://benberkenbosch.com',
       },
       {
-        img: '/images/Tclievelde.jpg',
+        img: '/images/Tclievelde.webp',
         title: 'TC lievelde',
         description: 'De vraag was of ik een frisse website kon bouwen waarin ze hun content konden beheren en vooral belangrijk een reserveringssysteem. De oude website was een oud vertrouwd pareltje op het web. Het gebruikte namelijk nog Adobe Flash Player, maar dit wordt niet meer ondersteund.',
         url: 'https://tclievelde.nl',
       },
       {
-        img: '/images/Legoland.jpg',
+        img: '/images/Legoland.webp',
         title: 'Legoland Doetinchem (School opdracht)',
         description: 'De vraag was om een applicatie te maken waarin je als gebruiker tickets voor "Legoland Doetinchem" kon bestellen. Dit is natuurlijk een nep opdracht, maar wel leuk om te delen. Dit was namelijk mijn eerste Laravel website. Ik heb ook mollie payments geïmplementeerd zo kon je dus ook daadwerkelijk geld betalen voor de nep tickets. Helaas staat de site niet live.',
         url: '',
       },
       {
-        img: '/images/Tao.jpg',
+        img: '/images/Tao.webp',
         title: 'Tao / Bely.nl',
         description: 'Er werd mij gevraagd door de jeu de boules vereniging om een website te maken waar zij onderlinge scores in konden voeren. Hierbij kwam er ook een scorebord die berekende wie er op welke plek moest komen te staan. Jammer genoeg staat de website achter een vergrendeling dit heeft te maken met de privacy van de spelers.',
         url: 'http://bely.nl',

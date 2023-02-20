@@ -7,19 +7,32 @@
       Hier heb ik een overzicht van de verschillende programmeertalen waarmee ik werk.
     </p>
     <div class="mt-4 bg-blue-400 p-4 rounded-lg shadow-inset flex flex-wrap justify-center gap-4">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s" src="/images/kennis/Laravel.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px]" src="/images/kennis/JavaScript.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s" src="/images/kennis/Sass.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px]" src="/images/kennis/Typescript.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px]" src="/images/kennis/Vite.svg">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px]" src="/images/kennis/Vue.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s" src="/images/kennis/Composer.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px]" src="/images/kennis/Css.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s" src="/images/kennis/Html.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px]" src="/images/kennis/Json.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s" src="/images/kennis/Node.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px]" src="/images/kennis/Phpstorm.png">
-      <img class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s" src="/images/kennis/Wordpress.png">
+      <img alt="Laravel" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s"
+           src="/images/kennis/Laravel.webp">
+      <img alt="Javascript" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
+           src="/images/kennis/JavaScript.webp">
+      <img alt="Sass" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s"
+           src="/images/kennis/Sass.webp">
+      <img alt="Typescript" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
+           src="/images/kennis/Typescript.webp">
+      <img alt="Vite" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
+           src="/images/kennis/Vite.svg">
+      <img alt="Vue" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
+           src="/images/kennis/Vue.webp">
+      <img alt="Composer" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s"
+           src="/images/kennis/Composer.webp">
+      <img alt="Css" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
+           src="/images/kennis/Css.webp">
+      <img alt="Html" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s"
+           src="/images/kennis/Html.webp">
+      <img alt="Json" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
+           src="/images/kennis/Json.webp">
+      <img alt="Node" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s"
+           src="/images/kennis/Node.webp">
+      <img alt="Phpstorm" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
+           src="/images/kennis/Phpstorm.webp">
+      <img alt="Wordpress" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s"
+           src="/images/kennis/Wordpress.webp">
     </div>
   </div>
 </template>
