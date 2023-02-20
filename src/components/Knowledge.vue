@@ -7,7 +7,7 @@
       Hier heb ik een overzicht van de verschillende programmeertalen waarmee ik werk.
     </p>
     <div class="mt-4 bg-blue-400 p-4 rounded-lg shadow-inset flex flex-wrap justify-center gap-4">
-      <img alt="Laravel" height="60" width="62" class="aspect-square object-fit max-w-[60px] max-h-[62px] spin-6s"
+      <img alt="Laravel" height="62" width="60" class="aspect-square object-fit max-w-[60px] max-h-[62px] spin-6s"
            src="/images/kennis/Laravel.webp">
       <img alt="Javascript" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
            src="/images/kennis/JavaScript.webp">
@@ -17,7 +17,7 @@
            src="/images/kennis/Typescript.webp">
       <img alt="Vite" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
            src="/images/kennis/Vite.svg">
-      <img alt="Vue" height="60" width="52" class="aspect-square object-fit max-w-[52px] max-h-[60px]"
+      <img alt="Vue" height="52" width="60" class="aspect-square object-fit max-w-[60px] max-h-[52px]"
            src="/images/kennis/Vue.webp">
       <img alt="Composer" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px] spin-6s"
            src="/images/kennis/Composer.webp">
