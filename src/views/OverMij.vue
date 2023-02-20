@@ -70,7 +70,10 @@ export default defineComponent({
         <div class="flex justify-end mt-4 md:mt-0">
           <img class="rounded-xl aspect-square object-cover shadow-lg hover:rotate-3 duration-300"
                alt="Profielfoto Keagan Mulder"
-               src="/images/pf-km.webp"/>
+               src="/images/pf-km.webp"
+               width="100%"
+               height="100%"
+          />
         </div>
       </div>
     </div>
