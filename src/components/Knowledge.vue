@@ -7,7 +7,8 @@
       Hier heb ik een overzicht van de verschillende programmeertalen waarmee ik werk.
     </p>
     <div class="mt-4 bg-blue-400 p-4 rounded-lg shadow-inset flex flex-wrap justify-center gap-4">
-      <img alt="Laravel" height="62" width="60" class="aspect-square object-fit max-w-[60px] max-h-[62px] spin-6s"
+      <img alt="Laravel" height="62" width="60"
+           class="aspect-square object-fit min-w-[60px] max-w-[60px] min-h-[62px] max-h-[62px] spin-6s"
            src="/images/kennis/Laravel.webp">
       <img alt="Javascript" height="60" width="60" class="aspect-square object-fit max-w-[60px] max-h-[60px]"
            src="/images/kennis/JavaScript.webp">
