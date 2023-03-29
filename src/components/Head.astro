@@ -1,0 +1,26 @@
+---
+export interface Props {
+    title: string,
+    permalink: string,
+    image: string,
+    description: string
+}
+---
+<!doctype html>
+<html lang="nl-NL">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Keagan Mulder - {Astro.props.title}</title>
+    <meta name="keywords" content="keagan mulder, keagan, mulder, webdeveloper, webdevelopment, website maken, website laten maken, keaganmulder.nl, software devlopment, developer, freelancer">
+    <meta name="author" content="Keagan Mulder">
+    {Astro.props.description ? <meta name="description" content={Astro.props.description}> : ""}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content=`Keagan Mulder - ${Astro.props.title}`/>
+    {Astro.props.permalink ? <meta property="og:url" content={Astro.props.permalink} /> : ""}
+    {Astro.props.image ? <meta property="og:image" content={Astro.props.image} /> : ""}
+    {Astro.props.description ? <meta name="og:description" content={Astro.props.description}> : ""}
+    <meta property="og:site_name" content="https://www.keaganmulder.nl" />
+</head>
+<body>

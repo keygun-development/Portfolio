@@ -1,33 +1,31 @@
 <script setup lang="ts">
-// @ts-nocheck
 import MobileMenu from './MobileMenu.vue';
 import MenuDisclosure from "./MenuDisclosure.vue";
 </script>
-
 <template>
   <div class="py-4 bg-black shadow-lg sticky top-0 z-10 left-0 right-0">
     <nav class="container mx-auto c-navigation flex justify-between px-4">
       <div class="w-4/12">
-        <RouterLink to="/" class="text-orange-400 text-xl !font-semibold flex">
+        <a href="/" class="text-orange-400 text-xl !font-semibold flex">
           Keagan<span class="!text-white">Mulder</span>
-        </RouterLink>
+        </a>
       </div>
       <div class="justify-between w-8/12 hidden md:flex">
         <ul class="w-6/12 flex justify-center gap-x-4">
           <li>
-            <RouterLink to="/projecten" class="text-gray-300 hover:text-white duration-300">
+            <a href="/projecten" class="text-gray-300 hover:text-white duration-300">
               Projecten
-            </RouterLink>
+            </a>
           </li>
           <li>
-            <RouterLink to="/packages" class="text-gray-300 hover:text-white duration-300">
+            <a href="/packages" class="text-gray-300 hover:text-white duration-300">
               Packages
-            </RouterLink>
+            </a>
           </li>
           <li>
-            <RouterLink to="/over-mij" class="text-gray-300 hover:text-white duration-300">
+            <a href="/over-mij" class="text-gray-300 hover:text-white duration-300">
               Over mij
-            </RouterLink>
+            </a>
           </li>
         </ul>
         <div class="w-6/12 flex justify-end gap-x-4">
@@ -60,19 +58,19 @@ import MenuDisclosure from "./MenuDisclosure.vue";
       <div id="mobile-menu" class="c-mobile__menu">
         <ul>
           <li>
-            <RouterLink to="/projecten" class="text-gray-300 hover:text-white duration-300">
+            <a href="/projecten" class="text-gray-300 hover:text-white duration-300">
               Projecten
-            </RouterLink>
+            </a>
           </li>
           <li>
-            <RouterLink to="/packages" class="text-gray-300 hover:text-white duration-300">
+            <a href="/packages" class="text-gray-300 hover:text-white duration-300">
               Packages
-            </RouterLink>
+            </a>
           </li>
           <li>
-            <RouterLink to="/over-mij" class="text-gray-300 hover:text-white duration-300">
+            <a href="/over-mij" class="text-gray-300 hover:text-white duration-300">
               Over mij
-            </RouterLink>
+            </a>
           </li>
         </ul>
       </div>

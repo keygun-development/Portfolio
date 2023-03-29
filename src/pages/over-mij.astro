@@ -1,0 +1,29 @@
+---
+import OverHero from '../components/OverHero.vue';
+import Layout from "../layouts/app.astro";
+import Timeline from "../components/Timeline.vue";
+---
+<Layout title="Over mij"
+        permalink="/over-mij"
+        image={`${Astro.site}images/pf-km.webp`}
+        description="Ik ben Keagan Mulder, een 21-jarige webdeveloper uit het mooie Gelderland. Ik ben gespecialiseerd in het maken van websites en webapplicaties."
+>
+    <div class="bg-gray-900 py-4">
+        <div class="container mx-auto px-4">
+            <div class="w-full flex justify-between items-center flex-col md:flex-row">
+                <OverHero client:only></OverHero>
+                <div class="flex justify-end mt-4 md:mt-0">
+                    <img class="rounded-xl aspect-square object-cover shadow-lg hover:rotate-3 duration-300"
+                         alt="Profielfoto Keagan Mulder"
+                         src="/images/pf-km.webp"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gradient-to-b from-gray-900 to-black shadow-lg py-4">
+        <div class="container mx-auto px-4">
+            <Timeline client:only></Timeline>
+        </div>
+    </div>
+</Layout>

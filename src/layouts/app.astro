@@ -1,0 +1,19 @@
+---
+import Head from "../components/Head.astro"
+import Header from "../components/Header.vue"
+import "../styles/main.scss"
+export interface Props {
+    title: string,
+    permalink: string,
+    image: string,
+    description: string
+}
+---
+<Head
+        title={Astro.props.title}
+        permalink={Astro.props.permalink}
+        image={Astro.props.image}
+        description={Astro.props.description}
+/>
+<Header client:only></Header>
+<slot />

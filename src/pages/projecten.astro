@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/app.astro';
+import Projecten from '../components/Projecten.vue';
+---
+<Layout title="Projecten"
+        permalink="/projecten"
+        image={`${Astro.site}images/Ben.webp`}
+        description="Hier vind je een overzicht van alle projecten die ik heb gemaakt."
+>
+    <Projecten client:only></Projecten>
+</Layout>

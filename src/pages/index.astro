@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/app.astro";
+import Knowledge from '../components/Knowledge.astro';
+import Timeline from "../components/Timeline.vue";
+import HomeHero from "../components/HomeHero.vue";
+---
+<Layout title="Home"
+        permalink="/"
+        image={`${Astro.site}images/pf-km.webp`}
+        description="Keagan Mulder is een front-end developer uit Nederland. Hij is gespecialiseerd in het bouwen van websites en webapplicaties met behulp van Vue.js, Nuxt.js, Astro, Tailwind CSS en Alpine.js."
+>
+    <section class="hero-section">
+        <div class="bg-gray-900 py-4">
+            <div class="container mx-auto px-4">
+                <div class="w-full flex justify-between items-center flex-col md:flex-row">
+                    <HomeHero client:only></HomeHero>
+                    <div class="flex justify-end mt-4 md:mt-0">
+                        <img class="rounded-xl aspect-square object-cover shadow-lg hover:rotate-3 duration-300"
+                             alt="Profielfoto Keagan Mulder"
+                             src="/images/pf-km.webp"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-gradient-to-b from-gray-900 to-black shadow-lg py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center">
+                <Knowledge></Knowledge>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black py-4">
+        <div class="container mx-auto px-4">
+            <Timeline client:only></Timeline>
+        </div>
+    </div>
+</Layout>

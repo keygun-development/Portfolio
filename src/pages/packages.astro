@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/app.astro';
+import Packages from '../components/Packages.vue';
+---
+<Layout title="Packages"
+        permalink="/packages"
+        image={`${Astro.site}images/Draggable.gif`}
+        description="Hier vind je een overzicht van alle packages die ik heb gemaakt."
+>
+    <Packages client:only></Packages>
+</Layout>

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      "./src/**/*.{vue,ts}"
+      "./src/**/*.{vue,ts,astro}"
   ],
   theme: {
     extend: {
@@ -10,5 +10,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

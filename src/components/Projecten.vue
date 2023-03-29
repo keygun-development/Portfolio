@@ -1,7 +1,7 @@
 <script lang="ts">
 import {defineComponent, ref} from 'vue';
 import ProjectCard from "../components/ProjectCard.vue";
-import Project from "../types/Project";
+import type Project from "../types/Project";
 
 export default defineComponent({
   data() {
