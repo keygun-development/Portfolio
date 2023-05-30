@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.freave.app",
+      "sha256_cert_fingerprints": [
+        "A3:D4:B2:18:2E:62:ED:E4:9B:E9:AB:C2:94:C3:16:5A:E5:F8:08:5C:8C:AC:3A:BF:A0:3A:5F:1C:73:58:B7:68"
+      ]
+    }
+  }
+]
