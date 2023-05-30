@@ -1,0 +1,23 @@
+{
+  "name": "com.freave.app",
+  "short_name": "com.freave.app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "intent_filters": [
+    {
+      "action": "android.intent.action.VIEW",
+      "data": [
+        {
+          "scheme": "http",
+          "host": "keaganmulder.nl"
+        },
+        {
+          "scheme": "https",
+          "host": "keaganmulder.nl"
+        }
+      ]
+    }
+  ]
+}
