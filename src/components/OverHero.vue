@@ -38,11 +38,9 @@ export default defineComponent({
     </div>
     <div class="prose lg:w-8/12 md:w-10/12 mt-8">
       <p class="text-gray-400">
-        Ik ben 21 jaar oud en zit op het Graafschap College in Doetinchem. Ik woon in Lichtenvoorde en werk bij Freave
+        Ik ben 21 jaar oud en ben sinds kort afgestudeerd aan het Graafschap College in Doetinchem. Ik woon in Lichtenvoorde en werk bij Freave
         in
-        Doetinchem. Ik ben sinds kort een Vof <a target="_blank" class="!text-gray-400 hover:text-white underline duration-300"
-                                                 href="https://plugzy.nl/">Plugzy</a> begonnen met een vriend van mij.
-        We zijn nog bezig met het ontwikkelen van het product.
+        Doetinchem.
       </p>
       <p class="text-gray-400">
         Ik hou ervan om uitdagingen aan te gaan en klanten te helpen bij het realiseren van hun online visie. Ik vind
