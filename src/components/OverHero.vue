@@ -6,12 +6,17 @@ export default defineComponent({
     return {
       typedText: '',
       text: "Ik ben een Front End <span class='text-orange-400'>Developer</span> uit Lichtenvoorde,  <span class='text-orange-400'>Nederland</span>.",
-      typing: false
+      typing: false,
+      age: 0
     }
   },
 
   mounted() {
     this.typeText();
+    let currentDate = new Date();
+    let birthDate = new Date("2001/09/14");
+    let difference = currentDate - birthDate;
+    this.age = Math.floor(difference/31557600000);
   },
 
   methods: {
@@ -38,7 +43,7 @@ export default defineComponent({
     </div>
     <div class="prose lg:w-8/12 md:w-10/12 mt-8">
       <p class="text-gray-400">
-        Ik ben 21 jaar oud en ben sinds kort afgestudeerd aan het Graafschap College in Doetinchem. Ik woon in Lichtenvoorde en werk bij Freave
+        Ik ben {{ age }} jaar oud en ben sinds kort afgestudeerd aan het Graafschap College in Doetinchem. Ik woon in Lichtenvoorde en werk bij Freave
         in
         Doetinchem.
       </p>
