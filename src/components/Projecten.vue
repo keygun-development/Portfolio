@@ -1,69 +1,26 @@
-<script lang="ts">
-import {defineComponent, ref} from 'vue';
+<script setup lang="ts">
+import {ref} from 'vue';
 import ProjectCard from "../components/ProjectCard.vue";
-import type Project from "../types/Project";
+import { fetchAllUserRepos } from '../octokit'
 
-export default defineComponent({
-  data() {
-    return {
-      typedText: '',
-      text: "Benieuwd naar de <span class='text-orange-400'>projecten</span> waar ik aan heb gewerkt? Ik heb ze hier op een <span class='text-orange-400'>rij</span> voor je.",
-      typing: false
-    }
-  },
+const typedText = ref('')
+const text = "Benieuwd naar de <span class='text-orange-400'>projecten</span> waar ik aan heb gewerkt? Ik heb ze hier op een <span class='text-orange-400'>rij</span> voor je."
+let typing = ref(false)
+const projects = ref()
 
-  setup() {
-    const projects = ref<Project[]>([
-      {
-        img: `/images/Ben.webp`,
-        title: 'Ben Berkenbosch',
-        description: 'Ben had mij gevraagd een website te maken waar hij zijn eigen muziek op kon publiceren. Dit klonk als een leuk project! Hij moet albums aan kunnen maken, muziek toevoegen en teksten aanpassen. Ik heb een eigen dashboard achter de website gebouwd zodat hij dit zelf kon doen.',
-        url: 'https://benberkenbosch.com',
-      },
-      {
-        img: '/images/Tclievelde.webp',
-        title: 'TC lievelde',
-        description: 'De vraag was of ik een frisse website kon bouwen waarin ze hun content konden beheren en vooral belangrijk een reserveringssysteem. De oude website was een oud vertrouwd pareltje op het web. Het gebruikte namelijk nog Adobe Flash Player, maar dit wordt niet meer ondersteund.',
-        url: 'https://tclievelde.nl',
-      },
-      {
-        img: '/images/Legoland.webp',
-        title: 'Legoland Doetinchem (School opdracht)',
-        description: 'De vraag was om een applicatie te maken waarin je als gebruiker tickets voor "Legoland Doetinchem" kon bestellen. Dit is natuurlijk een nep opdracht, maar wel leuk om te delen. Dit was namelijk mijn eerste Laravel website. Ik heb ook mollie payments geïmplementeerd zo kon je dus ook daadwerkelijk geld betalen voor de nep tickets. Helaas staat de site niet live.',
-        url: '',
-      },
-      {
-        img: '/images/Tao.webp',
-        title: 'Tao / Bely.nl',
-        description: 'Er werd mij gevraagd door de jeu de boules vereniging om een website te maken waar zij onderlinge scores in konden voeren. Hierbij kwam er ook een scorebord die berekende wie er op welke plek moest komen te staan. Jammer genoeg staat de website achter een vergrendeling dit heeft te maken met de privacy van de spelers.',
-        url: 'http://bely.nl',
-      }
-    ])
-
-    return {
-      projects
-    }
-  },
-
-  components: {
-    ProjectCard
-  },
-
-  mounted() {
-    this.typeText();
-  },
-
-  methods: {
-    async typeText() {
-      this.typing = true;
-      for (let i = 0; i < this.text.length; i++) {
-        this.typedText += this.text[i];
-        await new Promise(resolve => setTimeout(resolve, 75));
-      }
-      this.typing = false;
-    }
+const typeText = async () => {
+  typing.value = true;
+  for (let i = 0; i < text.length; i++) {
+    typedText.value += text[i];
+    await new Promise(resolve => setTimeout(resolve, 75));
   }
-});
+  typing.value = false;
+}
+
+typeText()
+fetchAllUserRepos().then((data) => {
+  projects.value = data
+})
 </script>
 
 <template>

@@ -1,38 +1,36 @@
-<script lang="ts">
-import {defineComponent, PropType} from "vue";
-import Project from "../types/Project";
+<script setup lang="ts">
+import {PropType, ref} from "vue";
+import type Project from "../types/Project";
+import { fetchBelongingImage } from "../octokit";
 
-export default defineComponent({
-  props: {
-    project: {
-      required: true,
-      type: Object as PropType<Project>
-    }
+const link = ref('')
+
+const fetchImage = async (reponame: string) => {
+  fetchBelongingImage(props.project.owner.login, reponame).then((data) => {
+    link.value = data
+  })
+}
+
+const props = defineProps({
+  project: {
+    required: true,
+    type: Object as PropType<Project>
   }
-});
+})
+
+fetchImage(props.project.name)
 </script>
 
 <template>
-  <a v-if="project.url" target="_blank" :href="project.url" class="grid-item">
-    <img class="aspect-video object-cover w-full rounded-t-xl" :src="project.img"/>
+  <a target="_blank" :href="project.homepage ? project.homepage : project.html_url" class="grid-item">
+    <img class="aspect-video object-cover w-full rounded-t-xl" :src="link"/>
     <div class="p-8 bg-gray-800 rounded-b-xl">
-      <h3 class="sm:text-2xl text-xl font-bold text-orange-400">
-        {{ project.title }}
+      <h3 class="sm:text-2xl text-xl font-bold text-orange-400 capitalize">
+        {{ project.name }}
       </h3>
       <p class="mt-4 text-gray-400">
-        {{ project.description }}
+        {{ project.description ? project.description : project.repository.description }}
       </p>
     </div>
   </a>
-  <div v-else class="grid-item">
-    <img class="aspect-video object-cover w-full rounded-t-xl" :src="project.img"/>
-    <div class="p-8 bg-gray-800 rounded-b-xl">
-      <h3 class="sm:text-2xl text-xl font-bold text-orange-400">
-        {{ project.title }}
-      </h3>
-      <p class="mt-4 text-gray-400">
-        {{ project.description }}
-      </p>
-    </div>
-  </div>
 </template>
