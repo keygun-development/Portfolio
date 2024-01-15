@@ -1,51 +1,27 @@
-<script lang="ts">
+<script setup lang="ts">
 import {defineComponent, ref} from 'vue';
 import ProjectCard from "../components/ProjectCard.vue";
 import type Project from "../types/Project";
+import {fetchAllOrgPackages, fetchAllUserRepos} from "../octokit";
 
-export default defineComponent({
-  data() {
-    return {
-      typedText: '',
-      text: "Benieuwd naar de <span class='text-orange-400'>packages</span> waar ik aan heb gewerkt? Ik heb ze hier op een <span class='text-orange-400'>rij</span> voor je.",
-      typing: false
-    }
-  },
+const typedText = ref('')
+const text = "Benieuwd naar de <span class='text-orange-400'>packages</span> waar ik aan heb gewerkt? Ik heb ze hier op een <span class='text-orange-400'>rij</span> voor je."
+let typing = ref(false)
+const packages = ref()
 
-  setup() {
-    const packages = ref<Project[]>([
-      {
-        img: '/images/flowcheck.jpg',
-        title: 'Flowcheck',
-        description: 'Een github action waarmee je consistentie in code behoudt. Tijdens het aanmaken van een Code check wordt deze action uitgevoerd en laat hij het weten wanneer er fouten in je code zitten waardoor er nooit kapotte code op een productieomgeving kan komen!',
-        url: 'https://github.com/marketplace/actions/flowcheck-install-dependencies-run-code-checkers',
-      }
-    ])
-
-    return {
-      packages
-    }
-  },
-
-  components: {
-    ProjectCard
-  },
-
-  mounted() {
-    this.typeText();
-  },
-
-  methods: {
-    async typeText() {
-      this.typing = true;
-      for (let i = 0; i < this.text.length; i++) {
-        this.typedText += this.text[i];
-        await new Promise(resolve => setTimeout(resolve, 75));
-      }
-      this.typing = false;
-    }
+const typeText = async () => {
+  typing.value = true;
+  for (let i = 0; i < text.length; i++) {
+    typedText.value += text[i];
+    await new Promise(resolve => setTimeout(resolve, 75));
   }
-});
+  typing.value = false;
+}
+
+typeText()
+fetchAllOrgPackages().then((data) => {
+  packages.value = data
+})
 </script>
 
 <template>

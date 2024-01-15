@@ -1,8 +1,13 @@
+type Repository = {
+    [key: string]: any;
+};
+
 interface Project {
-    img: string,
-    title: string,
+    name: string,
+    html_url: string,
+    homepage: string,
     description: string,
-    url: string
+    repository: Repository
 }
 
 export default Project
