@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/vue": "^2.1.0",
-    "@types/node": "^18.13.0",
+    "@types/node": "^20.11.2",
     "astro": "^2.1.8",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.33",
