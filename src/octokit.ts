@@ -1,6 +1,6 @@
 import {Octokit} from "octokit";
 
-const octokit = new Octokit({auth: `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`});
+const octokit = new Octokit({auth: `${import.meta.env.VITE_GITHUB_TOKEN}`, userAgent: `keygun-development`});
 
 export async function fetchAllUserRepos() {
     const repos = [];
