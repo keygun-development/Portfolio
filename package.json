@@ -14,7 +14,7 @@
     "@types/node": "^18.13.0",
     "astro": "^2.1.8",
     "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.33",
     "register-service-worker": "^1.7.2",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
