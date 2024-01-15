@@ -1,6 +1,6 @@
 import {Octokit} from "octokit";
 
-const octokit = new Octokit({auth: `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`});
+const octokit = new Octokit({auth: `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`});
 
 export async function fetchAllUserRepos() {
     const repos = [];
