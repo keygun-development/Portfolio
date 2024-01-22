@@ -8,7 +8,7 @@ export default defineComponent({
     const timelines = ref<Timeline[]>([
       {
         year: 2020,
-        accomplishment: 'Start opleiding (Software developer niveau 4)'
+        accomplishment: 'Start opleiding Software developer niveau 4 Graafschap College'
       },
       {
         year: 2021,
@@ -20,11 +20,19 @@ export default defineComponent({
       },
       {
         year: 2022,
-        accomplishment: 'Oplevering eerste website (Alleen gemaakt): <a class="hover:underline" target="_blank" href="https://tclievelde.nl/">TC Lievelde</a>'
+        accomplishment: 'Oplevering <a class="hover:underline" target="_blank" href="https://tclievelde.nl/">TC Lievelde</a>'
       },
       {
         year: 2023,
         accomplishment: 'Eindstage: <a class="hover:underline" target="_blank" href="https://www.freave.com/">Freave</a>'
+      },
+      {
+        year: 2023,
+        accomplishment: 'Diploma niveau 4 Software developer'
+      },
+      {
+        year: 2023,
+        accomplishment: 'Start HBO-ICT Saxion Enschede'
       }
     ])
     return {
