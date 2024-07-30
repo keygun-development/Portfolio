@@ -21,7 +21,7 @@
     "sass": "^1.77.8",
     "sass-loader": "^14.2.1",
     "tailwindcss": "^3.4.7",
-    "vue": "^3.4.33",
+    "vue": "^3.4.34",
     "workbox-precaching": "^7.1.0",
     "workbox-routing": "^7.0.0"
   },
