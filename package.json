@@ -23,7 +23,7 @@
     "tailwindcss": "^3.4.15",
     "vue": "^3.5.13",
     "workbox-precaching": "^7.1.0",
-    "workbox-routing": "^7.0.0"
+    "workbox-routing": "^7.3.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^3.0.1",
