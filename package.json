@@ -26,7 +26,7 @@
     "workbox-routing": "^7.3.0"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^3.0.1",
+    "@astrojs/tailwind": "^5.1.4",
     "@tailwindcss/typography": "^0.5.15"
   }
 }
